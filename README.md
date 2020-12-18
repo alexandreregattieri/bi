@@ -1,13 +1,15 @@
 # Dashboard de Horas Extras e Painel de Gestão de Pessoas
 
-## Objetivo:
+## Objetivo
 Criação, através da ferrementa Data Google Studio, um Dashboard de Horas Extras e um Painel de Gestão de Pessoas para a empresa CESAN.
 
 Tanto o dashboard quanto o painel buscam prover informações, organizadas de forma intuitiva, para subsidiar a tomada de decisões.
 
 Todos os dados contidos no link abaixo são ilusórios e foram colocados apenas para formar uma base de simulação.
 
-## Extração das Informações:
+IMPORTANTE: Todos os passos abaixo estão diretamente voltados para a construção da ferramenta. Apesar de terem sido realizados, não estão listados demasi passos como: definição do problema, definições junto as partes interessadas, levantamento de requisitos, testes entre outros.
+
+## Extração das Informações
 
 As informações foram retiradas de diferentes fontes de dados para compor o painel final. Todos os dados utilizados estão armazenados dentro das fronteiras do sistema SAP e foram extraídos através de arquivos na extensão "txt" ou "xls". Cada extração, por convenção, será nomeada de relatório, onde destacamos:
 - Relatório de Encargos:
@@ -127,13 +129,64 @@ As informações foram retiradas de diferentes fontes de dados para compor o pai
 | % Absenteísmo | Decimal |
 | % Absenteísmo sem afastamentos | Decimal |
 
-## Transformação das Informações:
+## Transformação das Informações
 
-## Carga das Informações:
+Após a extração dos relatórios acima especificados, os dados foram agrupados em um único recurso. Uma planilha no formato "xls".
 
-## Criação do Dashboard:
+Nesta planilha, foi feito o agrupamento dos dados unificando os resultados pela seguinte chave composta: "Diretoria", "Gerência" e "Lotação". Ou seja, apesar dos dados estarem detalhados por matricula, data e tipo de registro, eles foram agrupados pela visão de estrutura organizacional da empresa no tempo.
 
-## Visualização do Modelo Final:
+Mais precisamente, cada registro (ou tupla) tem, no mínimo, as informações de "Diretoria", "Gerência", "Lotação" e "Competência".
+
+Nesta mesma planilha, os foram criados componentes para exportação dos dados no formato "csv".
+
+## Análise da massa de dados
+
+Após o tratamento das informações, especificado acima, os dados exportados foram analisados considerando medidas de tendência central e medidas de dispensão utilizando a linguagem Python.
+
+Abaixo seguem alguns exemplos das análise realizada.
+
+```python
+import pandas as pd
+import numpy as np
+
+df = pd.read_csv('FatoHoras_Extras_201901_202009.csv')
+
+# Média - valor de concentração dos dados
+print(df['Qtde'].mean())
+print(df['Montante'].mean())
+
+# Mediana - separação das metades superior e inferior
+print(df['Qtde'].quantile())
+
+# Quantil - valor que está um certo percentual dos dados
+print(df['Montante'].quantile(q=0.25))
+
+# Moda - valor que mais se repete
+print(df['Qtde'].mode())
+
+# Amplitude - diferença entre o maior e o menor valor
+print(df['Montante'].max() - df['Montante'].min())
+
+# Variância - expressão da dispersão dos dados em relação ao valor esperado
+print(df['Qtde'].var())
+
+# Desvio Padrão - expressão da dispersão dos dados em relação a média
+print(df['Qtde'].std())
+
+# Desvio absoluto
+print(df['Qtde'].mad())
+
+# Covariância e Correlação - apenas para analisar a relação entre as variáveis 'Qtde' e 'Montante'
+print(df.cov())
+print(df.corr())
+```
+
+
+## Carga das Informações
+
+## Criação do Dashboard
+
+## Visualização do Modelo Final
 
 Link: https://sites.google.com/view/relatoriohorasextrasteste/home
 
