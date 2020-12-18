@@ -59,15 +59,55 @@ As informações foram retiradas de diferentes fontes de dados para compor o pai
 
 - Relatório de Treinamentos Realizados:
 
+| Campo | Tipo |
+|-------|------|
+| Centro de custo | Inteiro |
+| Resumo lotação | String |
+| Descrição lotação | String |
+| Matrícula | Inteiro |
+| Nome | String |
+| Código treinamento | Inteiro |
+| Tipo de treinamento | String |
+| Código evento | Inteiro |
+| Descrição evento | String |
+| Data evento | Data |
+| Quantidade de horas | Decimal |
+| Indicador se obrigatório | String |
+
 - Relatório de Exames Periódicos Realizados:
 
+| Campo | Tipo |
+|-------|------|
+| Nome | String |
+| Data nascimento | Data |
+| Status da programação | String |
+| Data consulta | Data |
+| Hora consulta | Hora |
+| Tipo exame | String |
+| Denominação exame | String |
+| Número do serviço | Inteiro |
+| Médico | String |
+| Serviço | String |
+| Status do serviço | String |
+
 - Relatório de Afastamentos:
+
+| Campo | Tipo |
+|-------|------|
+| Competência | String |
+| Matricula | Inteiro |
+| Nome | String |
+| Lotação | Data |
+| Número efetivo | Inteiro |
+| Quadro lotação | Inteiro |
+| Horas de trabalho | Decimal |
+| Horas acumuladas | Decimal |
 
 - Relatório de Absenteísmo:
 
 | Campo | Tipo |
 |-------|------|
-| Centro de Custo | Inteiro |
+| Centro de custo | Inteiro |
 | Lotação | String |
 | Descrição da lotação | String |
 | Gerência | String |
