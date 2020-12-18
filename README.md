@@ -65,6 +65,28 @@ As informações foram retiradas de diferentes fontes de dados para compor o pai
 
 - Relatório de Absenteísmo:
 
+| Campo | Tipo |
+|-------|------|
+| Centro de Custo | Inteiro |
+| Lotação | String |
+| Descrição da lotação | String |
+| Gerência | String |
+| Diretoria | String |
+| Matrícula | Inteiro |
+| Nome | String |
+| Regra do plano de horário | String |
+| Horas efetivas | Decimal |
+| Horas trabalhadas | Decimal |
+| Atrasos | Decimal |
+| Faltas | Decimal |
+| DSRs | Decimal |
+| Atestados | Decimal |
+| Afastamentos | Decimal |
+| Suspensões | Decimal |
+| Ausências abonadas | Decimal |
+| % Absenteísmo | Decimal |
+| % Absenteísmo sem afastamentos | Decimal |
+
 ## Transformação das Informações:
 
 ## Carga das Informações:
