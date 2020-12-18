@@ -7,8 +7,8 @@ Tanto o dashboard quanto o painel buscam prover informações, organizadas de fo
 
 Todos os dados contidos no link abaixo são ilusórios e foram colocados apenas para formar uma base de simulação.
 
-| Descrição da rubrica | Descrição da rubrica |
-|----------------------|----------------------|
+| Campo | Tipo |
+|-------|------|
 | Matrícula | Inteiro |
 | Nome | String |
 | Rubrica salarial | String |
