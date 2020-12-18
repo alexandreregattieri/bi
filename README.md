@@ -11,14 +11,12 @@ Todos os dados contidos no link abaixo são ilusórios e foram colocados apenas 
 
 As informações foram retiradas de diferentes fontes de dados para compor o painel final. Todos os dados utilizados estão armazenados dentro das fronteiras do sistema SAP e foram extraídos através de arquivos na extensão "txt" ou "xls". Cada extração, por convenção, será nomeada de relatório, onde destacamos:
 - Relatório de Encargos:
-| Descrição | Tipo |
-| ------ | ------ |
-| Matricula | Numérico |
-| Nome | Texto  |
-| Rubrica salarial | Texto |
-| Descrição da rubrica | Texto |
-| Lotação | Alfanumérico |
-| Montante | Decimal |
+  - Matricula >> Numérico 
+  - Nome >> Alfanumérico
+  - Rubrica salarial >> Alfanumérico
+  - Descrição da rubrica >> Alfanumérico
+  - Lotação >> Alfanumérico
+  - Montante >> Decimal
 
 - Relatório de Horas Extras Estruturais para Pagamento:
 
