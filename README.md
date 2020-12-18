@@ -181,14 +181,106 @@ print(df.cov())
 print(df.corr())
 ```
 
-
 ## Carga das Informações
+
+Após a extração, transformação e análise dos dados, foi iniciada a carga dos dados em formato "csv". A carga levou em consideração os diferentes cenários e criou as seguintes tabelas:
+
+- Fato_Absenteismo:
+
+| Campo | Tipo |
+|-------|------|
+| Competência | String |
+| Diretoria | String |
+| Gerência | String |
+| Lotação | String |
+| Horas efetivas | Decimal |
+| Horas trabalhadas | Decimal |
+| Atrasos | Decimal |
+| Faltas | Decimal |
+| Dsr | Decimal |
+| Atestado | Decimal |
+| Afastamento | Decimal |
+| Suspensão | Decimal |
+| Ausências Abonadas | Decimal |
+
+- Fato_Ausentes_Pcmso:
+
+| Campo | Tipo |
+|-------|------|
+| Competência | String |
+| Diretoria | String |
+| Gerência | String |
+| Lotação | String |
+| Matrícula | String |
+| Nome | String |
+| Observação | String |
+
+- Fato_Ausentes_Treinamentos:
+
+| Campo | Tipo |
+|-------|------|
+| Competência | String |
+| Diretoria | String |
+| Gerência | String |
+| Lotação | String |
+| Matrícula | String |
+| Data | Date |
+| Nome | String |
+| Treinamento | String |
+
+- Fato_Numero_Pcmso:
+
+| Campo | Tipo |
+|-------|------|
+| Competência | String |
+| Diretoria | String |
+| Gerência | String |
+| Lotação | String |
+| Não cumpriu | Inteiro |
+
+- Fato_Numero_Treinamentos:
+
+| Campo | Tipo |
+|-------|------|
+| Competência | String |
+| Diretoria | String |
+| Gerência | String |
+| Lotação | String |
+| Número de treinamentos | Inteiro |
+| Ausentes em treinamentos | Inteiro |
+
+- Fato_Remuneracoes:
+
+| Campo | Tipo |
+|-------|------|
+| Competência | String |
+| Diretoria | String |
+| Gerência | String |
+| Lotação | String |
+| Quantidade | Decimal |
+| Remuneração | Decimal |
+| Encargos | Decimal |
+
+- Fato_Horas_Extras:
+
+| Campo | Tipo |
+|-------|------|
+| Competência | String |
+| Diretoria | String |
+| Gerência | String |
+| Lotação | String |
+| Tipo de hora extra | String |
+| Código da hora extra | String |
+| Quantidade | Decimal |
+| Montante | Decimal |
 
 ## Criação do Dashboard
 
-## Visualização do Modelo Final
+Após a carga de dados, foram criados campos utilizando da linguagem da própria ferramenta como, por exemplo, percentual de absenteísmo, além de filtros específicos para competência passadas.
 
-Link: https://sites.google.com/view/relatoriohorasextrasteste/home
+Foram utilizados diferentes gráficos e tabelas com o intuito de facilitar a visualição e permitir a tomada de descisões.
+
+Finalizada a construção da ferramenta, o layout visual apresentado foi dividido em dois paineis, abaixo mostrados e disponíveis no seguinte link: https://sites.google.com/view/relatoriohorasextrasteste/home.
 
 ### Dashboard de Horas Extras
 
@@ -197,5 +289,4 @@ Link: https://sites.google.com/view/relatoriohorasextrasteste/home
 ### Painel de Gestão de Pessoas
 
 ![001_202019101406](https://user-images.githubusercontent.com/36538143/96493894-f3e1a380-121b-11eb-95c1-b0acb8b54034.JPG)
-
 
