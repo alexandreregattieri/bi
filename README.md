@@ -23,9 +23,39 @@ As informações foram retiradas de diferentes fontes de dados para compor o pai
 
 - Relatório de Horas Extras Estruturais para Pagamento:
 
+| Campo | Tipo |
+|-------|------|
+| Lotação | String |
+| Matrícula | Inteiro |
+| Nome | String |
+| Rubrica salarial | String |
+| Descrição da rubrica | String |
+| Quantidade | Decimal |
+| Montante | Decimal |
+
 - Relatório de Horas Extras Conjunturais para Pagamento:
 
-- Relatório de Horas Extras para Compensação:
+| Campo | Tipo |
+|-------|------|
+| Lotação | String |
+| Matrícula | Inteiro |
+| Nome | String |
+| Rubrica salarial | String |
+| Descrição da rubrica | String |
+| Quantidade | Decimal |
+| Montante | Decimal |
+
+- Relatório de tipos de Horas Extras para Comparação:
+
+| Campo | Tipo |
+|-------|------|
+| Matrícula | Inteiro |
+| Nome | String |
+| Competência | String |
+| Tipo de hora extra | String |
+| Descrição da hora extra | String |
+| Quantidade | Decimal |
+| Lotação | String |
 
 - Relatório de Treinamentos Realizados:
 
