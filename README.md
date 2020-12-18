@@ -10,21 +10,27 @@ Todos os dados contidos no link abaixo são ilusórios e foram colocados apenas 
 ## Extração das Informações:
 
 As informações foram retiradas de diferentes fontes de dados para compor o painel final. Todos os dados utilizados estão armazenados dentro das fronteiras do sistema SAP e foram extraídos através de arquivos na extensão "txt" ou "xls". Cada extração, por convenção, será nomeada de relatório, onde destacamos:
-1) Relatório de Encargos:
-  xhxhxhxhx
-2) Relatório de Horas Extras Estruturais para Pagamento:
+(1) Relatório de Encargos:
+Matricula Numérico
+Nome Texto
+Rubrica salarial Texto
+Descrição da rubrica  Texto
+Lotação Alfanumérico
+Montante Decimal
 
-3) Relatório de Horas Extras Conjunturais para Pagamento:
+(2) Relatório de Horas Extras Estruturais para Pagamento:
 
-4) Relatóri ode Horas Extras para Compensação:
+(3) Relatório de Horas Extras Conjunturais para Pagamento:
 
-5) Relatório de Treinamentos Realizados:
+(4) Relatório de Horas Extras para Compensação:
 
-6) Relatório de Exames Períódicos Realizados:
+(5) Relatório de Treinamentos Realizados:
 
-7) Relatório de Afastamentos:
+(6) Relatório de Exames Períódicos Realizados:
 
-8) Relatório de Absenteísmo:
+(7) Relatório de Afastamentos:
+
+(8) Relatório de Absenteísmo:
 
 ## Transformação das Informações:
 
