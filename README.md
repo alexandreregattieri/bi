@@ -7,9 +7,15 @@ Tanto o dashboard quanto o painel buscam prover informações, organizadas de fo
 
 Todos os dados contidos no link abaixo são ilusórios e foram colocados apenas para formar uma base de simulação.
 
-| ola | ola |
-|-----|-----|
-| ola | ola |
+| Descrição da rubrica | Descrição da rubrica |
+|----------------------|----------------------|
+| Matrícula | Inteiro |
+| Nome | String |
+| Rubrica salarial | String |
+| Descrição da rubrica | String |
+| Lotação | String |
+| Montante | Decimal |
+
 
 ## Extração das Informações:
 
